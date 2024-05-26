@@ -19,7 +19,7 @@ Predicting Rice Yield:
 Once the models are trained using the provided dataset, the application allows users to input values for various features such as area, average rainfall, pesticides usage, etc. Based on these inputs, the trained regression models predict the expected yield of rice per hectare (hg/ha_yield). Users can explore different scenarios by adjusting the input values and observing how changes in environmental factors impact rice production. This predictive capability empowers stakeholders in the agriculture sector to make informed decisions and optimize resource allocation for maximizing yield.
 
 Requirements:
-Python 3.x
+Python 3.x 
 Pandas
 NumPy
 Matplotlib
