@@ -1,4 +1,5 @@
 Data Visualization and Rice Yield Prediction Tool
+
 This Python application provides a graphical user interface (GUI) for visualizing data and predicting rice yield based on various factors. It utilizes Tkinter for the GUI and Matplotlib for plotting.
 
 Features
