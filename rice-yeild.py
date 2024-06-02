@@ -164,13 +164,13 @@ def main():
     canvas.create_window((0, 0), window=plot_frame, anchor="nw")
 
     # Create Message widgets to display MSE and MAE
-    mse_message = tk.Message(root, text=f"MSE Linear Regression: {mseL:.2f},MAE Linear Regression: {maeL:.2f}")
+    mse_message = tk.Message(root, text=f"MSE Linear Regression: {mseL:.2f},MAE Linear Regression: {maeL:.2f}", font=("Helvetica", 14))
     mse_message.pack()
 
-    mae_message = tk.Message(root, text=f"MSE Random Forest: {mseR:.2f}, MAE Random Forest: {maeR:.2f}")
+    mae_message = tk.Message(root, text=f"MSE Random Forest: {mseR:.2f}, MAE Random Forest: {maeR:.2f}", font=("Helvetica", 14))
     mae_message.pack()
 
-    mae_message = tk.Message(root, text=f"MSE ANN: {mseA:.2f}, MAE ANN: {maeA:.2f}")
+    mae_message = tk.Message(root, text=f"MSE ANN: {mseA:.2f}, MAE ANN: {maeA:.2f}", font=("Helvetica", 14))
     mae_message.pack()
     # Generate plots
     generate_plots(plot_frame, data, features, target)
