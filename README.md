@@ -27,3 +27,14 @@ Matplotlib
 Seaborn
 Scikit-learn
 Tkinter
+
+Interpretation:
+Lower MSE and MAE values indicate better performance.
+Among the three models, the ANN (Artificial Neural Network) has the lowest MSE and MAE, suggesting it is the most accurate in predicting the rice yield.
+The Linear Regression model performs slightly worse than the ANN but better than the Random Forest in terms of MSE.
+The Random Forest model has slightly higher errors than both the ANN and Linear Regression in terms of both MSE and MAE.
+
+Summary:
+The ANN model appears to be the best-performing model for your dataset, as it has the lowest errors.
+The Linear Regression model also performs reasonably well but not as well as the ANN.
+The Random Forest model, while useful in many scenarios, seems to be the least accurate for this particular dataset in terms of both MSE and MAE.

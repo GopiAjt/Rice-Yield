@@ -64,6 +64,11 @@ def evaluate_models(modelLR, modelRFR, modelANN, X_test, y_test):
     maeR = mean_absolute_error(y_test, y_predRFR)
     mseA = mean_squared_error(y_test, y_predANN)
     maeA = mean_absolute_error(y_test, y_predANN)
+
+    # Print statements to output the values in the terminal
+    print(f"MSE Linear Regression: {mseL:.2f}, MAE Linear Regression: {maeL:.2f}")
+    print(f"MSE Random Forest: {mseR:.2f}, MAE Random Forest: {maeR:.2f}")
+    print(f"MSE ANN: {mseA:.2f}, MAE ANN: {maeA:.2f}")
     
     return mseL, maeL, mseR, maeR, mseA, maeA
 
@@ -164,7 +169,7 @@ def main():
     canvas.create_window((0, 0), window=plot_frame, anchor="nw")
 
     # Create Message widgets to display MSE and MAE
-    mse_message = tk.Message(root, text=f"MSE Linear Regression: {mseL:.2f},MAE Linear Regression: {maeL:.2f}", font=("Helvetica", 14))
+    mse_message = tk.Message(root, text=f"MSE Linear Regression: {mseL:.2f}, MAE Linear Regression: {maeL:.2f}", font=("Helvetica", 14))
     mse_message.pack()
 
     mae_message = tk.Message(root, text=f"MSE Random Forest: {mseR:.2f}, MAE Random Forest: {maeR:.2f}", font=("Helvetica", 14))
